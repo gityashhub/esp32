@@ -10,7 +10,7 @@ app.use(express.json()); // In case you add JSON body handling later
 
 // Dummy variable to simulate alert status
 // 0: Safe, 1: Yellow Alert, 2: Red Alert
-let alertStatus = 0;
+let alertStatus = 2;
 
 // GET route for ESP32 to check current alert status
 app.get('/api/alert', (req, res) => {
